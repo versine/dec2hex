@@ -1,5 +1,5 @@
 # dec2hex
-Converts prints every decimal number argument in hex
+Prints every decimal number argument in hex
 
 ### Installation
 
