@@ -8,10 +8,10 @@ import (
 )
 
 func main() {
-	s := flag.Bool("s", false, "Whether to insert spaces between individual numbers")
+	c := flag.Bool("c", false, "Concatenate results together")
 	flag.Parse()
 
-	if len(flag.Args()) < 2 {
+	if len(flag.Args()) < 1 {
 		fmt.Printf("Usage %s n1 n2 n3 ...", os.Args[0])
 	}
 
@@ -19,7 +19,7 @@ func main() {
 	for _, num := range nums {
 		n, _ := strconv.Atoi(num)
 		fmt.Printf("%02x", n)
-		if *s {
+		if !*c {
 			fmt.Printf(" ")
 		}
 	}

@@ -1,6 +1,5 @@
 # dec2hex
-converts every single-number decimal argument to hex and concatenates the result into a single string 
-
+Converts prints every decimal number argument in hex
 
 ### Installation
 
